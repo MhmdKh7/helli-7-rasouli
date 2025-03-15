@@ -54,6 +54,7 @@
         </div>
     </section>
 
+
     <section class="category-section">
         <div class="container">
             <div class="category-header">
@@ -64,6 +65,24 @@
                     </div>
                     <h2>Browse by Category</h2>
                 </div>
+            </div>
+            <div class="category-list">
+                <?php
+                $categories = [
+                    ["name" => "Computers", "image" => "computers.png"],
+                    ["name" => "Accessories", "image" => "accessories.png"],
+                    ["name" => "Laptops", "image" => "laptops.png"],
+                    ["name" => "Phones", "image" => "phones.png"],
+                    ["name" => "Networking", "image" => "networking.png"],
+                    ["name" => "PC Gaming", "image" => "pc-gaming.png"],
+                ];
+                foreach ($categories as $category) {
+                    echo '<div class="category-item">';
+                    echo '<img src="' . $category['image'] . '" alt="' . $category['name'] . '">';
+                    echo '<p>' . $category['name'] . '</p>';
+                    echo '</div>';
+                }
+                ?>
             </div>
         </div>
     </section>

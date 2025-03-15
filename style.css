@@ -175,6 +175,7 @@ body {
     transform: translate(-170px, 0);
 }
 
+
 .category-section {
     padding: 40px 0;
     background-color: var(--background-color);
@@ -195,10 +196,28 @@ body {
 
 .category-list {
     display: flex;
-    gap: 20px;
     overflow-x: auto;
     padding-bottom: 10px;
     scroll-behavior: smooth;
     gap: 52px;
 }
 
+.category-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 150px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.category-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 16px;
+    color: var(--text-color);
+}
