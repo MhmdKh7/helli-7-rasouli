@@ -148,3 +148,31 @@ body {
     line-height: 1.2;
 }
 
+.shop-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.shop-btn img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0);
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 750px;
+    height: auto;
+    transform: translate(-170px, 0);
+}
