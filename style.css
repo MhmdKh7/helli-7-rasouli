@@ -1,8 +1,10 @@
 :root {
-    --main-color: #456de4; 
+    --main-color: #456de4;
     --text-color: #000000;
     --background-color: white;
     --gray-color: gray;
+    --hero-bg-color: #fff5f0;
+    --deal-color: #ff6f61;
 }
 
 * {
@@ -13,25 +15,34 @@
     text-decoration: none !important;
 }
 
+body {
+    background-color: var(--hero-bg-color);
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    overflow: hidden;
     padding: 0 20px;
 }
 
 .main-container {
-    width: 70%;
+    width: 100%;
     margin: auto;
+    position: relative;
 }
+
 
 .header {
     background-color: var(--background-color);
     padding: 15px 0;
-    margin: 30px 0;
+    margin: 20px auto;
+    position: relative;
+    z-index: 2;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
 }
 
 .logo {
@@ -56,11 +67,14 @@
 }
 
 .menu li a {
-    color: var(--text-color); 
+    color: var(--text-color);
     font-size: 16px;
-    
+    transition: color 0.3s ease;
 }
 
+.menu li a:hover {
+    color: #555;
+}
 
 .icon {
     width: 100px;
@@ -72,4 +86,65 @@
 .icon img {
     width: 20px;
     height: auto;
+    filter: brightness(0);
 }
+
+
+.hero {
+    position: relative;
+    padding: 0;
+    margin-top: -55px;
+    z-index: 1;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-bg-color);
+    z-index: 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.deal-tag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.deal-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--deal-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.deal-tag span {
+    color: var(--deal-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
