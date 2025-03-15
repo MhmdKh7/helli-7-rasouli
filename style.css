@@ -32,7 +32,6 @@ body {
     position: relative;
 }
 
-
 .header {
     background-color: var(--background-color);
     padding: 15px 0;
@@ -88,7 +87,6 @@ body {
     height: auto;
     filter: brightness(0);
 }
-
 
 .hero {
     position: relative;
@@ -172,7 +170,35 @@ body {
 }
 
 .hero-image img {
-    width: 750px;
+    width: 770px;
     height: auto;
     transform: translate(-170px, 0);
 }
+
+.category-section {
+    padding: 40px 0;
+    background-color: var(--background-color);
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.category-title h2 {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.category-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    gap: 52px;
+}
+
