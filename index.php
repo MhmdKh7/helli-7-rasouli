@@ -54,7 +54,6 @@
         </div>
     </section>
 
-
     <section class="category-section">
         <div class="container">
             <div class="category-header">
@@ -86,6 +85,25 @@
             </div>
         </div>
     </section>
+    <div class="promo-div">
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <div class="deal-tag">
+                            <span class="deal-dot"></span>
+                            <span>Don't Miss!!</span>
+                        </div>
+                        <h2>Enhance Your Music Experience</h2>
+                        <a href="#" class="shop-btn">Check It Out!</a>
+                    </div>
+                    <div class="promo-image">
+                        <img src="promo-headphone.png" alt="Headphone">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </div>
 </body>
