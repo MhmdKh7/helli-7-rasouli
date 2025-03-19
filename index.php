@@ -106,7 +106,7 @@
         </section>
     </div>
 
-
+    
     <section class="products-section">
         <div class="container">
             <div class="products-header">
@@ -132,7 +132,9 @@
                 ];
                 foreach ($products as $product) {
                     echo '<div class="product-item">';
+                    echo '<div class="image-container">';
                     echo '<img src="' . $product['image'] . '" alt="' . $product['name'] . '">';
+                    echo '</div>';
                     echo '<h3>' . $product['name'] . '</h3>';
                     echo '<p class="price">' . $product['price'] . '</p>';
                     echo '</div>';
