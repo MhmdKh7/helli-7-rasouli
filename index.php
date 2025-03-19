@@ -85,6 +85,7 @@
             </div>
         </div>
     </section>
+
     <div class="promo-div">
         <section class="promo-section">
             <div class="container">
@@ -104,6 +105,42 @@
             </div>
         </section>
     </div>
+
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <div class="products-title">
+                    <div class="deal-tag">
+                        <span class="deal-dot"></span>
+                        <span>Our Products</span>
+                    </div>
+                    <h2>Explore Our Products</h2>
+                </div>
+            </div>
+            <div class="products-list">
+                <?php
+                $products = [
+                    ["name" => "Gaming Headphones", "price" => "$400",  "image" => "headphoneee.png"],
+                    ["name" => "Wireless Controller", "price" => "$29.89",  "image" => "controller1.png"],
+                    ["name" => "Gaming Keyboard", "price" => "$32.99",  "image" => "keyboard.png"],
+                    ["name" => "StreamCam", "price" => "$199",  "image" => "webcam.png"],
+                    ["name" => "Microphones", "price" => "$387",  "image" => "speakers.png"],
+                    ["name" => "Speakers", "price" => "$233",  "image" => "speaker.png"],
+                    ["name" => "Gaming Mouse", "price" => "$100",  "image" => "mouse.png"],
+                    ["name" => "VR Headsets", "price" => "$29.89",  "image" => "controller2.png"],
+                ];
+                foreach ($products as $product) {
+                    echo '<div class="product-item">';
+                    echo '<img src="' . $product['image'] . '" alt="' . $product['name'] . '">';
+                    echo '<h3>' . $product['name'] . '</h3>';
+                    echo '<p class="price">' . $product['price'] . '</p>';
+                    echo '</div>';
+                }
+                ?>
+            </div>
+        </div>
+    </section>
 
 </div>
 </body>
