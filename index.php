@@ -121,13 +121,13 @@
                 <?php
                 $products = [
                     ["name" => "Gaming Headphones", "price" => "$400", "image" => "headphoneee.png"],
-                    ["name" => "Wireless Controller", "price" => "$29.89", "image" => "controller1.png"],
+                    ["name" => "Wireless Controller", "price" => "$29.89", "image" => "controller2.png"],
                     ["name" => "Gaming Keyboard", "price" => "$32.99", "image" => "keyboard.png"],
                     ["name" => "StreamCam", "price" => "$199", "image" => "webcam.png"],
-                    ["name" => "Microphones", "price" => "$387", "image" => "speakers.png"],
-                    ["name" => "Speakers", "price" => "$233", "image" => "speaker.png"],
+                    ["name" => "Microphones", "price" => "$387", "image" => "Microphones.png"],
+                    ["name" => "Speakers", "price" => "$233", "image" => "Speakers.png"],
                     ["name" => "Gaming Mouse", "price" => "$100", "image" => "mouse.png"],
-                    ["name" => "VR Headsets", "price" => "$29.89", "image" => "controller2.png"],
+                    ["name" => "VR Headsets", "price" => "$29.89", "image" => "VR.png"],
                 ];
                 foreach ($products as $product) {
                     echo '<div class="product-item">';
@@ -152,13 +152,13 @@
                 <?php
                 $most_sold_products = [
                     ["name" => "Gaming Headphones", "price" => "$400", "image" => "headphoneee.png"],
-                    ["name" => "Wireless Controller", "price" => "$29.89", "image" => "controller1.png"],
+                    ["name" => "Wireless Controller", "price" => "$29.89", "image" => "controller2.png"],
                     ["name" => "Gaming Keyboard", "price" => "$32.99", "image" => "keyboard.png"],
                     ["name" => "StreamCam", "price" => "$199", "image" => "webcam.png"],
-                    ["name" => "Microphones", "price" => "$387", "image" => "speakers.png"],
-                    ["name" => "Speakers", "price" => "$233", "image" => "speaker.png"],
+                    ["name" => "Microphones", "price" => "$387", "image" => "Microphones.png"],
+                    ["name" => "Speakers", "price" => "$233", "image" => "Speakers.png"],
                     ["name" => "Gaming Mouse", "price" => "$100", "image" => "mouse.png"],
-                    ["name" => "VR Headsets", "price" => "$29.89", "image" => "controller2.png"],
+                    ["name" => "VR Headsets", "price" => "$29.89", "image" => "VRHeadsets.png"],
                 ];
                 foreach ($most_sold_products as $product) {
                     echo '<div class="most-sold-item">';
