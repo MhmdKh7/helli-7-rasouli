@@ -106,7 +106,6 @@
         </section>
     </div>
 
-    
     <section class="products-section">
         <div class="container">
             <div class="products-header">
@@ -121,14 +120,14 @@
             <div class="products-list">
                 <?php
                 $products = [
-                    ["name" => "Gaming Headphones", "price" => "$400",  "image" => "headphoneee.png"],
-                    ["name" => "Wireless Controller", "price" => "$29.89",  "image" => "controller1.png"],
-                    ["name" => "Gaming Keyboard", "price" => "$32.99",  "image" => "keyboard.png"],
-                    ["name" => "StreamCam", "price" => "$199",  "image" => "webcam.png"],
-                    ["name" => "Microphones", "price" => "$387",  "image" => "speakers.png"],
-                    ["name" => "Speakers", "price" => "$233",  "image" => "speaker.png"],
-                    ["name" => "Gaming Mouse", "price" => "$100",  "image" => "mouse.png"],
-                    ["name" => "VR Headsets", "price" => "$29.89",  "image" => "controller2.png"],
+                    ["name" => "Gaming Headphones", "price" => "$400", "image" => "headphoneee.png"],
+                    ["name" => "Wireless Controller", "price" => "$29.89", "image" => "controller1.png"],
+                    ["name" => "Gaming Keyboard", "price" => "$32.99", "image" => "keyboard.png"],
+                    ["name" => "StreamCam", "price" => "$199", "image" => "webcam.png"],
+                    ["name" => "Microphones", "price" => "$387", "image" => "speakers.png"],
+                    ["name" => "Speakers", "price" => "$233", "image" => "speaker.png"],
+                    ["name" => "Gaming Mouse", "price" => "$100", "image" => "mouse.png"],
+                    ["name" => "VR Headsets", "price" => "$29.89", "image" => "controller2.png"],
                 ];
                 foreach ($products as $product) {
                     echo '<div class="product-item">';
@@ -137,6 +136,43 @@
                     echo '</div>';
                     echo '<h3>' . $product['name'] . '</h3>';
                     echo '<p class="price">' . $product['price'] . '</p>';
+                    echo '</div>';
+                }
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <section class="most-sold-section">
+        <div class="container">
+            <div class="most-sold-header">
+                <h2>Most Sold in Store</h2>
+            </div>
+            <div class="most-sold-list">
+                <?php
+                $most_sold_products = [
+                    ["name" => "Gaming Headphones", "price" => "$400", "image" => "headphoneee.png"],
+                    ["name" => "Wireless Controller", "price" => "$29.89", "image" => "controller1.png"],
+                    ["name" => "Gaming Keyboard", "price" => "$32.99", "image" => "keyboard.png"],
+                    ["name" => "StreamCam", "price" => "$199", "image" => "webcam.png"],
+                    ["name" => "Microphones", "price" => "$387", "image" => "speakers.png"],
+                    ["name" => "Speakers", "price" => "$233", "image" => "speaker.png"],
+                    ["name" => "Gaming Mouse", "price" => "$100", "image" => "mouse.png"],
+                    ["name" => "VR Headsets", "price" => "$29.89", "image" => "controller2.png"],
+                ];
+                foreach ($most_sold_products as $product) {
+                    echo '<div class="most-sold-item">';
+                    echo '<div class="image-container">';
+                    echo '<img src="' . $product['image'] . '" alt="' . $product['name'] . '">';
+                    echo '</div>';
+                    echo '<div class="most-sold-content">';
+                    echo '<h3>' . $product['name'] . '</h3>';
+                    echo '<p class="price">' . $product['price'] . '</p>';
+                    echo '<div class="actions">';
+                    echo '<button class="favorite-btn">♥</button>';
+                    echo '<button class="buy-btn">Buy Product</button>';
+                    echo '</div>';
+                    echo '</div>';
                     echo '</div>';
                 }
                 ?>
