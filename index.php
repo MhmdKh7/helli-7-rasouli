@@ -206,6 +206,33 @@
         </div>
     </section>
 </div>
+
+<section class="features-section">
+    <div class="container">
+        <div class="features-list">
+            <div class="feature-item">
+                <img src="delivery-icon.png" alt="Fast & Secure Delivery">
+                <h3>Fast & Secure Delivery</h3>
+                <p>Tell about your service.</p>
+            </div>
+            <div class="feature-item">
+                <img src="guarantee-icon.png" alt="Money Back Guarantee">
+                <h3>Money Back Guarantee</h3>
+                <p>Within 10 days.</p>
+            </div>
+            <div class="feature-item">
+                <img src="return-icon.png" alt="24 Hour Return Policy">
+                <h3>24 Hour Return Policy</h3>
+                <p>No question ask.</p>
+            </div>
+            <div class="feature-item">
+                <img src="support-icon.png" alt="Pro Quality Support">
+                <h3>Pro Quality Support</h3>
+                <p>24/7 Live support.</p>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 
 </html>
