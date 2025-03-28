@@ -461,3 +461,76 @@ body {
 .buy-btn:hover {
     background-color: #f5f5f5;
 }
+
+.newsletter-section {
+    padding: 40px 0;
+    background-color: var(--background-color);
+}
+.newsletter-div{
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('newsletter-bg.jpg');
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(4, 27, 83, 0.91);
+    padding: 20px;
+    position: relative;
+    height: 400px;
+}
+
+.newsletter-text {
+    max-width: 50%;
+    padding: 0 60px;
+    position: relative;
+    z-index: 1;
+
+}
+.weekly-update{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #555;
+}
+

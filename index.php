@@ -180,6 +180,31 @@
         </div>
     </section>
 
+    <section class="newsletter-section">
+        <div class="newsletter-div">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <div class="deal-tag">
+                        <span class="deal-dot"></span>
+                        <span>Newsletter</span>
+                    </div>
+                    <h2 class="weekly-update">Get weekly update</h2>
+                    <form class="newsletter-form" method="POST" action="subscribe.php">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <?php
+                    if (isset($_GET['message'])) {
+                        $message = messages($_GET['message']);
+                        echo '<p class="form-message">' . $message . '</p>';
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 </body>
 
